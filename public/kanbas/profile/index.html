@@ -3,56 +3,122 @@
   <head>
     <meta charset="UTF-8" />
     <title>Title</title>
+    <link href="../index.css" rel="stylesheet" />
+    <link href="./index.css" rel="stylesheet" />
+    <link
+      href="../../vendors/fontawesome-free-5.15.4-web/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../vendors/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <table border="0" width="100%">
-      <tbody>
-        <thead>
-          <!-- <th> -->
-          <td>
-            <ul>
-              <li><a href="../profile/index.html">Account</a></li>
-              <li><a href="#">Dashboard</a></li>
-              <li><a href="../home.html">Courses</a></li>
-              <li><a href="#">Calendar</a></li>
-              <li><a href="#">Inbox</a></li>
-              <li><a href="#">History</a></li>
-              <li><a href="#">Studio</a></li>
-              <li><a href="#">Commons</a></li>
-              <li><a href="#">Help</a></li>
-            </ul>
-          </td>
-          <td>
-            <ul>
-              <li><a href="#">Notifications</a></li>
-              <li><a href="#">Profile</a></li>
-              <li><a href="#">Files</a></li>
-              <li><a href="#">Settings</a></li>
-              <li><a href="#">ePortfolios</a></li>
-              <li><a href="#">Shared content</a></li>
-              <li><a href="#">The Hub</a></li>
-              <li><a href="#">Qwickly Course Tools </a></li>
-              <li><a href="#">Global Annoucements</a></li>
-            </ul>
-          </td>
-          <td>
-            <label> Jose Annunziato's Profile </label>
-            <hr />
+    <div class="wd-sidebar-container">
+      <div class="wd-dimension-square-active">
+        <div style="width: 50%; height: 50%">
+          <i class="fa"></i><br /><a
+            href="./profile/index.html"
+            style="color: red"
+          >
+            <i class="fa fa-smile"></i>
+            Account</a
+          >
+        </div>
+      </div>
+      <div class="wd-dimension-square">
+        <div style="width: 50%; height: 50%">
+          <i class="fa"></i><br /><a
+            href="./profile/index.html"
+            style="color: white"
+          >
+            Dashboard</a
+          >
+        </div>
+      </div>
+      <div class="wd-dimension-square">
+        <div style="width: 50%; height: 50%">
+          <i class="fa"></i><br /><a href="./home.html" style="color: white">
+            Courses</a
+          >
+        </div>
+      </div>
+      <div class="wd-dimension-square">
+        <div style="width: 50%; height: 50%">
+          <i class="fa"></i><br /><a style="color: white"> Calendar</a>
+        </div>
+      </div>
+      <div class="wd-dimension-square">
+        <div style="width: 50%; height: 50%">
+          <i class="fa"></i><br /><a style="color: white"> Inbox</a>
+        </div>
+      </div>
+      <div class="wd-dimension-square">
+        <div style="width: 50%; height: 50%">
+          <i class="fa"></i><br /><a style="color: white"> History</a>
+        </div>
+      </div>
+      <div class="wd-dimension-square">
+        <div style="width: 50%; height: 50%">
+          <i class="fa"></i><br /><a style="color: white"> Studio</a>
+        </div>
+      </div>
+      <div class="wd-dimension-square">
+        <div style="width: 50%; height: 50%">
+          <i class="fa"></i><br /><a style="color: white"> Commons</a>
+        </div>
+      </div>
+      <div class="wd-dimension-square">
+        <div style="width: 50%; height: 50%">
+          <i class="fa"></i><br /><a style="color: white"> Help</a>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 5%; padding-top: 5%">
+      <div style="padding-left: 100px">
+        <label> Jose Annunziato's Profile </label>
+        <hr />
+      </div>
+      <div class="col-3">
+        <ul>
+          <div class="wd-account-nav-cell">Notifications</div>
+          <div class="wd-account-nav-cell-active">
+            <div style="color: black">Profile</div>
+          </div>
+          <div class="wd-account-nav-cell">Files</div>
+          <div class="wd-account-nav-cell">Settings</div>
+          <div class="wd-account-nav-cell">ePortfolios</div>
+          <div class="wd-account-nav-cell">Shared content</div>
+          <div class="wd-account-nav-cell">The Hub</div>
+          <div class="wd-account-nav-cell">Qwickly Course Tools</div>
+          <div class="wd-account-nav-cell">Global Annoucements</div>
+        </ul>
+      </div>
+      <div class="col-8">
+        <div class="row">
+          <i class="fa fa-user fa-10x col"></i>
+          <a class="col" href="./edit.html"
+            ><button><i class="fa fa-pencil-alt"></i> Edit Profile</button></a
+          >
+        </div>
+        <h1>Jose Annunziato</h1>
 
-            <h1>Jose Annunziato</h1>
-            <a href="./edit.html"><button>Edit Profile</button></a>
-            <br />
-            <h3>Contact</h3>
-            <br />
-            No registered services, you canadd some on the <a>settings</a> page
-            <h3>Biography</h3>
-            <br />
-            Faculty, Software Engineer, AI, Space, and renewable enthusiast.
-            <h3>Links</h3>
-            <a href="#">Youtube</a>
-          </td>
-        </thead>
-      </tbody>
-    </table>
+        <br />
+        <h3>Contact</h3>
+        <div style="padding-bottom: 20px">
+          No registered services, you canadd some on the <a>settings</a> page
+        </div>
+
+        <h3>Biography</h3>
+
+        <div style="padding-bottom: 20px">
+          Faculty, Software Engineer, AI, Space, and renewable enthusiast.
+        </div>
+        <br />
+        <h3>Links</h3>
+        <a href="#">Youtube</a>
+      </div>
+    </div>
   </body>
 </html>

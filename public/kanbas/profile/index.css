@@ -1,0 +1,13 @@
+.wd-account-nav-cell {
+  padding-left: 9px;
+  color: red;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.wd-account-nav-cell-active {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-left: solid;
+  padding-left: 9px;
+}
