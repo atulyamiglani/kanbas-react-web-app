@@ -20,63 +20,43 @@
   </head>
   <body style="padding: 0%; margin: 0%">
     <div class="wd-sidebar-container">
-      <div class="wd-dimension-square-active">
-        <div style="width: 50%; height: 50%">
-          <i class="fa"></i><br /><a
-            href="./profile/index.html"
-            style="color: red"
-          >
-            <i class="fa fa-smile"></i>
-            Account</a
-          >
+      <div class="wd-dimension-square text-center pt-3">
+        <div><i class="fa fa-user fa-lg"></i></div>
+        <div>Account</div>
+      </div>
+      <div class="wd-dimension-square text-center pt-3">
+        <i class="fas fa-tachometer-alt fa-lg"></i>
+        <div>
+          <a href="profile/index.html" style="color: white">Dashboard</a>
         </div>
       </div>
-      <div class="wd-dimension-square">
-        <div style="width: 50%; height: 50%">
-          <i class="fa"></i><br /><a
-            href="./profile/index.html"
-            style="color: white"
-          >
-            Dashboard</a
-          >
-        </div>
+      <div class="wd-dimension-square-active text-center pt-3">
+        <div><i class="fa fa-book fa-lg" aria-hidden="true"></i></div>
+        <div>Courses</div>
       </div>
-      <div class="wd-dimension-square">
-        <div style="width: 50%; height: 50%">
-          <i class="fa"></i><br /><a href="./home.html" style="color: white">
-            Courses</a
-          >
-        </div>
+      <div class="wd-dimension-square text-center pt-3">
+        <div><i class="fa fa-calendar fa-lg"></i></div>
+        <div>Calendar</div>
       </div>
-      <div class="wd-dimension-square">
-        <div style="width: 50%; height: 50%">
-          <i class="fa"></i><br /><a style="color: white"> Calendar</a>
-        </div>
+      <div class="wd-dimension-square text-center pt-3">
+        <div><i class="fa fa-inbox fa-lg"></i></div>
+        <div>Inbox</div>
       </div>
-      <div class="wd-dimension-square">
-        <div style="width: 50%; height: 50%">
-          <i class="fa"></i><br /><a style="color: white"> Inbox</a>
-        </div>
+      <div class="wd-dimension-square text-center pt-3">
+        <div><i class="fa fa-history fa-lg"></i></div>
+        <div>History</div>
       </div>
-      <div class="wd-dimension-square">
-        <div style="width: 50%; height: 50%">
-          <i class="fa"></i><br /><a style="color: white"> History</a>
-        </div>
+      <div class="wd-dimension-square text-center pt-3">
+        <div><i class="fa fa-tv fa-lg"></i></div>
+        <div>Studio</div>
       </div>
-      <div class="wd-dimension-square">
-        <div style="width: 50%; height: 50%">
-          <i class="fa"></i><br /><a style="color: white"> Studio</a>
-        </div>
+      <div class="wd-dimension-square text-center pt-3">
+        <div><i class="fa fa-file-export fa-lg"></i></div>
+        <div>Commons</div>
       </div>
-      <div class="wd-dimension-square">
-        <div style="width: 50%; height: 50%">
-          <i class="fa"></i><br /><a style="color: white"> Commons</a>
-        </div>
-      </div>
-      <div class="wd-dimension-square">
-        <div style="width: 50%; height: 50%">
-          <i class="fa"></i><br /><a style="color: white"> Help</a>
-        </div>
+      <div class="wd-dimension-square text-center pt-3">
+        <div><i class="fa fa-question-circle fa-lg"></i></div>
+        <div>Help</div>
       </div>
     </div>
 
@@ -98,17 +78,29 @@
       <div class="row">
         <div class="col-2">
           <ul>
-            <div class="wd-account-nav-cell">Notifications</div>
-            <div class="wd-account-nav-cell-active">
-              <div style="color: black">Profile</div>
+            <div class="wd-account-nav-cell-active">Home</div>
+            <div class="wd-account-nav-cell">Piazza</div>
+            <div class="wd-account-nav-cell">Zoon Meetings</div>
+            <div class="wd-account-nav-cell">Modules</div>
+            <div class="wd-account-nav-cell">Quizzes</div>
+            <div class="wd-account-nav-cell">
+              <a href="assignments/index.html">Assignments</a>
             </div>
+            <a href="./grades.html"
+              ><div class="wd-account-nav-cell">Grades</div></a
+            >
+            <div class="wd-account-nav-cell">People</div>
+            <div class="wd-account-nav-cell">Microsoft Teams Meetings</div>
+            <div class="wd-account-nav-cell">
+              Fact Reporting and Photo Roster
+            </div>
+            <div class="wd-account-nav-cell">Discussions</div>
+            <div class="wd-account-nav-cell">Annoucements</div>
+            <div class="wd-account-nav-cell">Pages</div>
             <div class="wd-account-nav-cell">Files</div>
+            <div class="wd-account-nav-cell">Rubrics</div>
+            <div class="wd-account-nav-cell">Outcomes</div>
             <div class="wd-account-nav-cell">Settings</div>
-            <div class="wd-account-nav-cell">ePortfolios</div>
-            <div class="wd-account-nav-cell">Shared content</div>
-            <div class="wd-account-nav-cell">The Hub</div>
-            <div class="wd-account-nav-cell">Qwickly Course Tools</div>
-            <div class="wd-account-nav-cell">Global Annoucements</div>
           </ul>
         </div>
 
@@ -352,19 +344,33 @@
             </li>
             <li class="list-group-item">
               <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+              ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
+              ><span class="p-5"
+                ><a href="#"
+                  >Introduction to Web Development Links to an external site.</a
+                >
+                <div class="float-end">
+                  <i
+                    class="fa fa-check-circle wd-fg-color-green p-1"
+                    aria-hidden="true"
+                  ></i>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i></div
+              ></span>
             </li>
             <li class="list-group-item">
               <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+              ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
+              ><span class="p-5"
+                ><a href="#"
+                  >Introduction to Web Development Links to an external site.</a
+                >
+                <div class="float-end">
+                  <i
+                    class="fa fa-check-circle wd-fg-color-green p-1"
+                    aria-hidden="true"
+                  ></i>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i></div
+              ></span>
             </li>
           </ul>
         </div>

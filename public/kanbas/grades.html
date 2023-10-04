@@ -3,69 +3,202 @@
   <head>
     <meta charset="UTF-8" />
     <title>Title</title>
+    <link href="../index.css" rel="stylesheet" />
+    <link href="./index.css" rel="stylesheet" />
+    <link
+      href="../../vendors/fontawesome-free-5.15.4-web/css/all.css"
+      rel="stylesheet"
+    />
+    <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <table>
-      <tbody>
-        <thead>
-          <!-- <th> -->
-          <td>
-            <ul>
-              <li><a href="./profile/index.html">Account</a></li>
-              <li><a href="#">Dashboard</a></li>
-              <li><a href="./home.html">Courses</a></li>
-              <li><a href="#">Calendar</a></li>
-              <li><a href="#">Inbox</a></li>
-              <li><a href="#">History</a></li>
-              <li><a href="#">Studio</a></li>
-              <li><a href="#">Commons</a></li>
-              <li><a href="#">Help</a></li>
-            </ul>
-          </td>
-          <td>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Modules</a></li>
-              <li><a href="#">Piazza</a></li>
-              <li><a href="#">Zoom Meetings</a></li>
-              <li><a href="./assignments/index.html">Assignments</a></li>
-              <li><a href="#">Quizzes</a></li>
-              <li><a href="./grades.html">Grades</a></li>
-              <li><a href="#">People</a></li>
-              <li><a href="#">Panopto Video</a></li>
-              <li><a href="#">Discussions</a></li>
-              <li><a href="#">Annoucements</a></li>
-              <li><a href="#">Pages</a></li>
-              <li><a href="#">Files</a></li>
-              <li><a href="#">Rubrics</a></li>
-              <li><a href="#">Outcomes</a></li>
-              <li><a href="#">Collaborations</a></li>
-              <li><a href="#">Syllabus</a></li>
-              <li><a href="#">Settings</a></li>
-            </ul>
-          </td>
-          <td>
-            <select>
-              <option value="">GradeBook</option>
-            </select>
-            <button>Import</button>
-            <select>
-              <option value="">Export</option>
-            </select>
-            <button>Configure</button>
-            <h5>Student Names</h5>
-            <input placeholder="Search Student" />
-            <h5>Assignment Names</h5>
-            <input placeholder="Search Assignments" />
-            <button>Apply Filters</button>
-            <table border="1">
-              <thead>
+    <div class="wd-sidebar-container">
+      <div class="wd-dimension-square text-center pt-3">
+        <div><i class="fa fa-user fa-lg"></i></div>
+        <div>Account</div>
+      </div>
+      <div class="wd-dimension-square text-center pt-3">
+        <i class="fas fa-tachometer-alt fa-lg"></i>
+        <div>
+          <a href="profile/index.html" style="color: white">Dashboard</a>
+        </div>
+      </div>
+      <div class="wd-dimension-square-active text-center pt-3">
+        <div><i class="fa fa-book fa-lg" aria-hidden="true"></i></div>
+        <div>Courses</div>
+      </div>
+      <div class="wd-dimension-square text-center pt-3">
+        <div><i class="fa fa-calendar fa-lg"></i></div>
+        <div>Calendar</div>
+      </div>
+      <div class="wd-dimension-square text-center pt-3">
+        <div><i class="fa fa-inbox fa-lg"></i></div>
+        <div>Inbox</div>
+      </div>
+      <div class="wd-dimension-square text-center pt-3">
+        <div><i class="fa fa-history fa-lg"></i></div>
+        <div>History</div>
+      </div>
+      <div class="wd-dimension-square text-center pt-3">
+        <div><i class="fa fa-tv fa-lg"></i></div>
+        <div>Studio</div>
+      </div>
+      <div class="wd-dimension-square text-center pt-3">
+        <div><i class="fa fa-file-export fa-lg"></i></div>
+        <div>Commons</div>
+      </div>
+      <div class="wd-dimension-square text-center pt-3">
+        <div><i class="fa fa-question-circle fa-lg"></i></div>
+        <div>Help</div>
+      </div>
+    </div>
+    <div class="container row" style="margin-left: 5%; padding-top: 5%">
+      <nav
+        style="--bs-breadcrumb-divider: '>'; padding: 2%"
+        aria-label="breadcrumb"
+      >
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item wd-fg-color-red">
+            <a href="#">CS4550.12631.202410</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Grades</li>
+        </ol>
+      </nav>
+      <hr />
+      <div class="col-3">
+        <ul>
+          <div class="wd-account-nav-cell">Home</div>
+          <div class="wd-account-nav-cell">Piazza</div>
+          <div class="wd-account-nav-cell">Zoon Meetings</div>
+          <div class="wd-account-nav-cell">Modules</div>
+          <div class="wd-account-nav-cell">Quizzes</div>
+          <div class="wd-account-nav-cell">Assignments</div>
+          <div class="wd-account-nav-cell-active">Grades</div>
+          <div class="wd-account-nav-cell">People</div>
+          <div class="wd-account-nav-cell">Microsoft Teams Meetings</div>
+          <div class="wd-account-nav-cell">Fact Reporting and Photo Roster</div>
+          <div class="wd-account-nav-cell">Discussions</div>
+          <div class="wd-account-nav-cell">Annoucements</div>
+          <div class="wd-account-nav-cell">Pages</div>
+          <div class="wd-account-nav-cell">Files</div>
+          <div class="wd-account-nav-cell">Rubrics</div>
+          <div class="wd-account-nav-cell">Outcomes</div>
+          <div class="wd-account-nav-cell">Settings</div>
+        </ul>
+      </div>
+      <div class="col-9">
+        <div>
+          <ul class="list-group">
+            <div class="container p-2">
+              <input style="height: 37px" placeholder="Search for Assignment" />
+              <div class="float-end wd-fg-color-green">
+                <button type="button" class="btn btn-secondary col">
+                  <i class="fa fa-file-import"></i>
+                  Import
+                </button>
+                <span class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton2"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa fa-file-import"></i>
+                    Export
+                  </button>
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark"
+                    aria-labelledby="dropdownMenuButton2"
+                  >
+                    <li>
+                      <a class="dropdown-item active" href="#">Action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </li>
+                  </ul>
+                </span>
+                <button type="button" class="btn btn-secondary col">
+                  <i class="fa fa-cog" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6"><b>Student Names</b></div>
+              <div class="col-6"><b>Assignment Names</b></div>
+            </div>
+
+            <div class="row">
+              <div class="col-6">
+                <div class="input-group">
+                  <span class="input-group-append">
+                    <button
+                      class="btn btn-outline-secondary bg-white border-end-0 border ms-n3"
+                      type="button"
+                    >
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </span>
+                  <input
+                    class="form-control border-start-0 border"
+                    type="text"
+                    value="Search Students"
+                    id="example-search-input"
+                  />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="input-group">
+                  <span class="input-group-append">
+                    <button
+                      class="btn btn-outline-secondary bg-white border-end-0 border ms-n3"
+                      type="button"
+                    >
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </span>
+                  <input
+                    class="form-control border-start-0 border"
+                    type="text"
+                    value="Search Assignments"
+                    id="example-search-input"
+                  />
+                </div>
+              </div>
+            </div>
+            <div>
+              <button class="btn btn-secondary m-2" type="button">
+                <i class="fa fa-filter"></i>
+                Apply Filters
+              </button>
+            </div>
+            <hr />
+            <table class="table table-striped">
+              <tr>
                 <th>Student Name</th>
                 <th>A1 Setup Out of Hundred</th>
                 <th>A2 HTML Out of Hundred</th>
                 <th>A3 CSS Out of 100</th>
                 <th>A4 Bootstrap out of 100</th>
-              </thead>
+              </tr>
               <tr>
                 <td>Princes Leia</td>
                 <td><input value="95" /></td>
@@ -95,9 +228,9 @@
                 <td><input value="93" /></td>
               </tr>
             </table>
-          </td>
-        </thead>
-      </tbody>
-    </table>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -23,66 +23,59 @@
   </head>
   <body>
     <div class="wd-sidebar-container">
-      <div class="wd-dimension-square">
-        <div style="width: 50%; height: 50%">
-          <i class="fa"></i><br /><a
-            href="./profile/index.html"
-            style="color: white"
-          >
-            <i class="fa fa-smile"></i>
-            Account</a
-          >
+      <div class="wd-dimension-square text-center pt-3">
+        <div><i class="fa fa-user fa-lg"></i></div>
+        <div>Account</div>
+      </div>
+      <div class="wd-dimension-square text-center pt-3">
+        <i class="fas fa-tachometer-alt fa-lg"></i>
+        <div>
+          <a href="profile/index.html" style="color: white">Dashboard</a>
         </div>
       </div>
-      <div class="wd-dimension-square-active">
-        <div style="width: 50%; height: 50%">
-          <i class="fa"></i><br /><a
-            href="./profile/index.html"
-            style="color: red"
-          >
-            Dashboard</a
-          >
-        </div>
+      <div class="wd-dimension-square-active text-center pt-3">
+        <div><i class="fa fa-book fa-lg" aria-hidden="true"></i></div>
+        <div>Courses</div>
       </div>
-      <div class="wd-dimension-square">
-        <div style="width: 50%; height: 50%">
-          <i class="fa"></i><br /><a href="./home.html" style="color: white">
-            Courses</a
-          >
-        </div>
+      <div class="wd-dimension-square text-center pt-3">
+        <div><i class="fa fa-calendar fa-lg"></i></div>
+        <div>Calendar</div>
       </div>
-      <div class="wd-dimension-square">
-        <div style="width: 50%; height: 50%">
-          <i class="fa"></i><br /><a style="color: white"> Calendar</a>
-        </div>
+      <div class="wd-dimension-square text-center pt-3">
+        <div><i class="fa fa-inbox fa-lg"></i></div>
+        <div>Inbox</div>
       </div>
-      <div class="wd-dimension-square">
-        <div style="width: 50%; height: 50%">
-          <i class="fa"></i><br /><a style="color: white"> Inbox</a>
-        </div>
+      <div class="wd-dimension-square text-center pt-3">
+        <div><i class="fa fa-history fa-lg"></i></div>
+        <div>History</div>
       </div>
-      <div class="wd-dimension-square">
-        <div style="width: 50%; height: 50%">
-          <i class="fa"></i><br /><a style="color: white"> History</a>
-        </div>
+      <div class="wd-dimension-square text-center pt-3">
+        <div><i class="fa fa-tv fa-lg"></i></div>
+        <div>Studio</div>
       </div>
-      <div class="wd-dimension-square">
-        <div style="width: 50%; height: 50%">
-          <i class="fa"></i><br /><a style="color: white"> Studio</a>
-        </div>
+      <div class="wd-dimension-square text-center pt-3">
+        <div><i class="fa fa-file-export fa-lg"></i></div>
+        <div>Commons</div>
       </div>
-      <div class="wd-dimension-square">
-        <div style="width: 50%; height: 50%">
-          <i class="fa"></i><br /><a style="color: white"> Commons</a>
-        </div>
-      </div>
-      <div class="wd-dimension-square">
-        <div style="width: 50%; height: 50%">
-          <i class="fa"></i><br /><a style="color: white"> Help</a>
-        </div>
+      <div class="wd-dimension-square text-center pt-3">
+        <div><i class="fa fa-question-circle fa-lg"></i></div>
+        <div>Help</div>
       </div>
     </div>
     <div class="container row" style="margin-left: 5%; padding-top: 5%">
+      <nav
+        style="--bs-breadcrumb-divider: '>'; padding: 2%"
+        aria-label="breadcrumb"
+      >
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item wd-fg-color-red">
+            <a href="#">CS4550.12631.202410</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Assignments
+          </li>
+        </ol>
+      </nav>
       <div class="col-3">
         <ul>
           <div class="wd-account-nav-cell">Home</div>
@@ -91,7 +84,9 @@
           <div class="wd-account-nav-cell">Modules</div>
           <div class="wd-account-nav-cell">Quizzes</div>
           <div class="wd-account-nav-cell-active">Assignments</div>
-          <div class="wd-account-nav-cell">Grades</div>
+          <a href="../grades.html"
+            ><div class="wd-account-nav-cell">Grades</div></a
+          >
           <div class="wd-account-nav-cell">People</div>
           <div class="wd-account-nav-cell">Microsoft Teams Meetings</div>
           <div class="wd-account-nav-cell">Fact Reporting and Photo Roster</div>
@@ -104,44 +99,32 @@
           <div class="wd-account-nav-cell">Settings</div>
         </ul>
       </div>
-      <div class="col-7">
+      <div class="col-8">
         <div>
           <ul class="list-group">
             <div class="container p-2">
+              <input style="height: 37px" placeholder="Search for Assignment" />
               <div class="float-end">
-                <button type="button" class="btn btn-secondary col">
-                  Collapse All
+                <button
+                  class="btn btn-secondary"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                  Group
                 </button>
-                <button type="button" class="btn btn-secondary col">
-                  View Progress
+                <button
+                  class="btn btn-danger"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                  Module
                 </button>
-                <button type="button" class="btn btn-secondary col">
-                  Publish All
-                </button>
-                <span class="dropdown">
-                  <button
-                    class="btn btn-danger dropdown-toggle"
-                    type="button"
-                    id="dropdownMenuButton1"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <i class="fa fa-plus" aria-hidden="true"></i>
-                    Module
-                  </button>
-                  <ul
-                    class="dropdown-menu"
-                    aria-labelledby="dropdownMenuButton1"
-                  >
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </span>
                 <!-- <button type="button" class="btn btn-danger col">
                   <i class="fa fa-plus" aria-hidden="true"></i>
                   Module
@@ -156,388 +139,239 @@
               <i class="fa fa-ellipsis-v" aria-hidden="true"></i
               ><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
               <span class="p-2"
-                >Week 0 - Intro
+                >Assignments
 
                 <div class="float-end">
-                  <i
-                    class="fa fa-check-circle wd-fg-color-green"
-                    aria-hidden="true"
-                  ></i>
+                  <span class="border border-dark rounded-pill">
+                    40% of Total
+                  </span>
                   <i class="fa fa-plus p-2" aria-hidden="true"></i>
                   <i class="fa fa-ellipsis-v" aria-hidden="true"></i></div
               ></span>
             </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><span class="p-2"
-                >LEARNING OBJECTIVES
-                <div class="float-end">
-                  <i
-                    class="fa fa-check-circle wd-fg-color-green p-1"
+            <li class="list-group-item" style="border-left: 5px solid green">
+              <div class="row">
+                <div class="col-2">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                  ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                  ><i
+                    class="wd-fg-color-green fa fa-book ps-2"
                     aria-hidden="true"
                   ></i>
-                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                 </div>
-              </span>
+                <div class="col-8 float-start ps-0">
+                  <a href="./edit.html" style="color: black"
+                    ><div>A1 - SETUP</div></a
+                  >
+                  <small>Due SEPTEMBER 17, 2023 | Points 100</small>
+                </div>
+                <div class="col-2">
+                  <div class="float-end">
+                    <i
+                      class="fa fa-check-circle wd-fg-color-green p-1"
+                      aria-hidden="true"
+                    ></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
             </li>
 
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><span class="p-5"
-                >Introduction to the course
-                <div class="float-end">
-                  <i
-                    class="fa fa-check-circle wd-fg-color-green p-1"
+            <li class="list-group-item" style="border-left: 5px solid green">
+              <div class="row">
+                <div class="col-2">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                  ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                  ><i
+                    class="wd-fg-color-green fa fa-book ps-2"
                     aria-hidden="true"
                   ></i>
-                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i></div
-              ></span>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><span class="p-5"
-                >Learn what is Web Development
-                <div class="float-end">
-                  <i
-                    class="fa fa-check-circle wd-fg-color-green p-1"
-                    aria-hidden="true"
-                  ></i>
-                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i></div
-              ></span>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><span class="p-5"
-                >Creating a Development Environment
-                <div class="float-end">
-                  <i
-                    class="fa fa-check-circle wd-fg-color-green p-1"
-                    aria-hidden="true"
-                  ></i>
-                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i></div
-              ></span>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><span class="p-5"
-                >Creating a Web Application
-                <div class="float-end">
-                  <i
-                    class="fa fa-check-circle wd-fg-color-green p-1"
-                    aria-hidden="true"
-                  ></i>
-                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i></div
-              ></span>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><span class="p-5"
-                >Getting started with the 1st assignment
-                <div class="float-end">
-                  <i
-                    class="fa fa-check-circle wd-fg-color-green p-1"
-                    aria-hidden="true"
-                  ></i>
-                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i></div
-              ></span>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><span class="p-2"
-                >READING
-                <div class="float-end">
-                  <i
-                    class="fa fa-check-circle wd-fg-color-green p-1"
-                    aria-hidden="true"
-                  ></i>
-                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i></div
-              ></span>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><span class="p-5"
-                >Full Stack Developer - Chapter 1 - Introduction
-                <div class="float-end">
-                  <i
-                    class="fa fa-check-circle wd-fg-color-green p-1"
-                    aria-hidden="true"
-                  ></i>
-                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i></div
-              ></span>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><span class="p-5"
-                >Full Stack Developer - Chapter 2 - Creating User Interfaces
-                <div class="float-end">
-                  <i
-                    class="fa fa-check-circle wd-fg-color-green p-1"
-                    aria-hidden="true"
-                  ></i>
-                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                 </div>
-              </span>
+                <div class="col-8 float-start ps-0">
+                  <a href="./edit.html" style="color: black"
+                    ><div>A2 - HTML</div></a
+                  >
+                  <small>Due October 2, 2023 | Points 100</small>
+                </div>
+                <div class="col-2">
+                  <div class="float-end">
+                    <i
+                      class="fa fa-check-circle wd-fg-color-green p-1"
+                      aria-hidden="true"
+                    ></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><span class="p-2"
-                >SLIDES
-                <div class="float-end">
-                  <i
-                    class="fa fa-check-circle wd-fg-color-green p-1"
+            <li class="list-group-item" style="border-left: 5px solid green">
+              <div class="row">
+                <div class="col-2">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                  ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                  ><i
+                    class="wd-fg-color-green fa fa-book ps-2"
                     aria-hidden="true"
                   ></i>
-                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i></div
-              ></span>
+                </div>
+                <div class="col-8 float-start ps-0">
+                  <a href="./edit.html" style="color: black"
+                    ><div>A3 - CSS</div></a
+                  >
+
+                  <small>Due October 6, 2023 | Points 100</small>
+                </div>
+                <div class="col-2">
+                  <div class="float-end">
+                    <i
+                      class="fa fa-check-circle wd-fg-color-green p-1"
+                      aria-hidden="true"
+                    ></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><span class="p-5"
-                ><a href="#"
-                  >Introduction to Web Development Links to an external site.</a
-                >
-                <div class="float-end">
-                  <i
-                    class="fa fa-check-circle wd-fg-color-green p-1"
+            <li class="list-group-item" style="border-left: 5px solid green">
+              <div class="row">
+                <div class="col-2">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                  ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                  ><i
+                    class="wd-fg-color-green fa fa-book ps-2"
                     aria-hidden="true"
                   ></i>
-                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i></div
-              ></span>
+                </div>
+                <div class="col-8 float-start ps-0">
+                  <a href="./edit.html" style="color: black"
+                    ><div>A4 BOOTSTRAP</div></a
+                  >
+
+                  <small>Due October 10, 2023 | Points 100</small>
+                </div>
+                <div class="col-2">
+                  <div class="float-end">
+                    <i
+                      class="fa fa-check-circle wd-fg-color-green p-1"
+                      aria-hidden="true"
+                    ></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
-              ><span class="p-5"
-                ><a href="#"
-                  >Creating a React Application Links to an external site.</a
-                >
-                <div class="float-end">
-                  <i
-                    class="fa fa-check-circle wd-fg-color-green p-1"
+            <li class="list-group-item" style="border-left: 5px solid green">
+              <div class="row">
+                <div class="col-2">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                  ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                  ><i
+                    class="wd-fg-color-green fa fa-book ps-2"
                     aria-hidden="true"
                   ></i>
-                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i></div
-              ></span>
+                </div>
+                <div class="col-8 float-start ps-0">
+                  <a href="./edit.html" style="color: black"
+                    ><div>A5 JAVASCRIPT</div></a
+                  >
+                  <small>Due October 2, 2023 | Points 100</small>
+                </div>
+                <div class="col-2">
+                  <div class="float-end">
+                    <i
+                      class="fa fa-check-circle wd-fg-color-green p-1"
+                      aria-hidden="true"
+                    ></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item" style="border-left: 5px solid green">
+              <div class="row">
+                <div class="col-2">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                  ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                  ><i
+                    class="wd-fg-color-green fa fa-book ps-2"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <div class="col-8 float-start ps-0">
+                  <a href="./edit.html" style="color: black"
+                    ><div>A6 REACT</div></a
+                  >
+                  <small>Due October 17, 2023 | Points 100</small>
+                </div>
+                <div class="col-2">
+                  <div class="float-end">
+                    <i
+                      class="fa fa-check-circle wd-fg-color-green p-1"
+                      aria-hidden="true"
+                    ></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item" style="border-left: 5px solid green">
+              <div class="row">
+                <div class="col-2">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                  ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                  ><i
+                    class="wd-fg-color-green fa fa-book ps-2"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <div class="col-8 float-start ps-0">
+                  <a href="./edit.html" style="color: black"
+                    ><div>A7 BACKEND</div></a
+                  >
+                  <small>Due NOVEMBER 2, 2023 | Points 100</small>
+                </div>
+                <div class="col-2">
+                  <div class="float-end">
+                    <i
+                      class="fa fa-check-circle wd-fg-color-green p-1"
+                      aria-hidden="true"
+                    ></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item" style="border-left: 5px solid green">
+              <div class="row">
+                <div class="col-2">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                  ><i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                  ><i
+                    class="wd-fg-color-green fa fa-book ps-2"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <div class="col-8 float-start ps-0">
+                  <a href="./edit.html" style="color: black"
+                    ><div>A8 TOKENS</div></a
+                  >
+                  style="color=black"
+                  <small>Due NOVEMBER 17, 2023 | Points 100</small>
+                </div>
+                <div class="col-2">
+                  <div class="float-end">
+                    <i
+                      class="fa fa-check-circle wd-fg-color-green p-1"
+                      aria-hidden="true"
+                    ></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
-        <ul class="list-group">
-          <li class="list-group-item list-group-item-secondary">
-            <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-            ><i class="fa fa-ellipsis-v" aria-hidden="true"></i>Week 1 - HTML +
-            CSS
-          </li>
-          <li class="list-group-item">
-            <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-            ><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-          </li>
-          <li class="list-group-item">
-            <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-            ><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-          </li>
-          <li class="list-group-item">
-            <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-            ><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-          </li>
-          <li class="list-group-item">
-            <i class="fa fa-ellipsis-v" aria-hidden="true"></i
-            ><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-          </li>
-        </ul>
       </div>
     </div>
-
-    <table border="0" width="100%">
-      <tbody>
-        <thead>
-          <!-- <th> -->
-          <td>
-            <ul>
-              <li><a href="../profile/index.html">Account</a></li>
-              <li><a href="#">Dashboard</a></li>
-              <li><a href="../home.html">Courses</a></li>
-              <li><a href="#">Calendar</a></li>
-              <li><a href="#">Inbox</a></li>
-              <li><a href="#">History</a></li>
-              <li><a href="#">Studio</a></li>
-              <li><a href="#">Commons</a></li>
-              <li><a href="#">Help</a></li>
-            </ul>
-          </td>
-          <!-- </th> -->
-          <!-- <th> -->
-          <td>
-            <ul>
-              <li><a href="../home.html">Home</a></li>
-              <li><a href="#">Modules</a></li>
-              <li><a href="#">Piazza</a></li>
-              <li><a href="#">Zoom Meetings</a></li>
-              <li><a href="../assignments/index.html">Assignments</a></li>
-              <li><a href="#">Quizzes</a></li>
-              <li><a href="../grades.html">Grades</a></li>
-              <li><a href="#">People</a></li>
-              <li><a href="#">Panopto Video</a></li>
-              <li><a href="#">Discussions</a></li>
-              <li><a href="#">Annoucements</a></li>
-              <li><a href="#">Pages</a></li>
-              <li><a href="#">Files</a></li>
-              <li><a href="#">Rubrics</a></li>
-              <li><a href="#">Outcomes</a></li>
-              <li><a href="#">Collaborations</a></li>
-              <li><a href="#">Syllabus</a></li>
-              <li><a href="#">Settings</a></li>
-            </ul>
-          </td>
-          <td>
-            <input placeholder="Search for Assignments" />
-            <button>Group</button>
-            <button>Assignment</button>
-            <select>
-              <option>Edit Assignment Dates</option>
-            </select>
-
-            <h6>
-              ASSIGNMENTS 40% OF TOTAL
-              <select>
-                <option value="Edit">Edit</option>
-                <option value="Edit">Speed Grader</option>
-                <option value="Edit">Duplicate</option>
-                <option value="Edit">Delete</option>
-                <option value="Edit">Move to</option>
-                <option value="Edit">Send to</option>
-                <option value="Edit">Copy To</option>
-                <option value="Edit">Share Commons</option>
-              </select>
-            </h6>
-            <ul>
-              <li>
-                <a href="./edit.html">A1 - ENV + HTML</a><br />
-                <a href="#">Multiple Modules</a> | Not available yet
-              </li>
-              <li>
-                <a href="./edit.html">A2 - CSS + Bootstrap</a><br />
-                <a href="#">Multiple Modules</a> | Not available yet
-              </li>
-              <li>
-                <a href="./edit.html">A3 - JS + React</a><br />
-                <a href="#">Multiple Modules</a> | Not available yet
-              </li>
-              <li>
-                <a href="./edit.html">A4 - State + Redux</a><br />
-                <a href="#">Multiple Modules</a> | Not available yet
-              </li>
-              <li>
-                <a href="./edit.html">A5 - Node + Session</a><br />
-                <a href="#">Multiple Modules</a> | Not available yet
-              </li>
-              <li>
-                <a href="./edit.html">A6 - Mongo + Mongoose</a><br />
-                <a href="#">Multiple Modules</a> | Not available yet
-              </li>
-            </ul>
-            <h6>
-              QUIZZES 10% OF TOTAL
-              <select>
-                <option value="Edit">Edit</option>
-                <option value="Edit">Speed Grader</option>
-                <option value="Edit">Duplicate</option>
-                <option value="Edit">Delete</option>
-                <option value="Edit">Move to</option>
-                <option value="Edit">Send to</option>
-                <option value="Edit">Copy To</option>
-                <option value="Edit">Share Commons</option>
-              </select>
-            </h6>
-            <ul>
-              <li>
-                <a href="#">Q1 - HTML</a><br />
-                <a href="#">Multiple Modules</a> | Not available yet
-              </li>
-              <li>
-                <a href="#">Q2 - CSS</a><br />
-                <a href="#">Multiple Modules</a> | Not available yet
-              </li>
-              <li>
-                <a href="#">Q3 - JS, ES6</a><br />
-                <a href="#">Multiple Modules</a> | Not available yet
-              </li>
-              <li>
-                <a href="#">Q4 - Node</a><br />
-                <a href="#">Multiple Modules</a> | Not available yet
-              </li>
-              <li>
-                <a href="#">Q5 - Mongo</a><br />
-                <a href="#">Multiple Modules</a> | Not available yet
-              </li>
-            </ul>
-            <h6>
-              EXAMS 20% OF TOTAL
-              <select>
-                <option value="Edit">Edit</option>
-                <option value="Edit">Speed Grader</option>
-                <option value="Edit">Duplicate</option>
-                <option value="Edit">Delete</option>
-                <option value="Edit">Move to</option>
-                <option value="Edit">Send to</option>
-                <option value="Edit">Copy To</option>
-                <option value="Edit">Share Commons</option>
-              </select>
-            </h6>
-            <ul>
-              <li>
-                <a href="#">Q1 - HTML</a><br />
-                <a href="#">Multiple Modules</a> | Not available yet
-              </li>
-              <li>
-                <a href="#">Q2 - CSS</a><br />
-                <a href="#">Multiple Modules</a> | Not available yet
-              </li>
-              <li>
-                <a href="#">Q3 - JS, ES6</a><br />
-                <a href="#">Multiple Modules</a> | Not available yet
-              </li>
-              <li>
-                <a href="#">Q4 - Node</a><br />
-                <a href="#">Multiple Modules</a> | Not available yet
-              </li>
-              <li>
-                <a href="#">Q5 - Mongo</a><br />
-                <a href="#">Multiple Modules</a> | Not available yet
-              </li>
-            </ul>
-            <h6>
-              PROJECT 30% OF TOTAL
-              <select>
-                <option value="Edit">Edit</option>
-                <option value="Edit">Speed Grader</option>
-                <option value="Edit">Duplicate</option>
-                <option value="Edit">Delete</option>
-                <option value="Edit">Move to</option>
-                <option value="Edit">Send to</option>
-                <option value="Edit">Copy To</option>
-                <option value="Edit">Share Commons</option>
-              </select>
-            </h6>
-            <ul>
-              <li>
-                <a href="#">Project</a><br />
-                <a href="#">Multiple Modules</a> | Not available yet
-              </li>
-            </ul>
-          </td>
-        </thead>
-      </tbody>
-    </table>
   </body>
 </html>
