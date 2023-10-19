@@ -1,0 +1,89 @@
+.wd-dimension-portrait {
+  width: 75px;
+  height: 100px;
+}
+
+.wd-dimension-landscape {
+  width: 100px;
+  height: 75px;
+}
+
+.wd-sidebar-container {
+  position: fixed;
+  background-color: black;
+  height: 100%;
+}
+
+.wd-dimension-square {
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.wd-dimension-square-active {
+  width: 80px;
+  height: 70px;
+  background-color: white;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+}
+
+.wd-bg-color-yellow {
+  background-color: #ffff07;
+}
+.wd-bg-color-blue {
+  background-color: #7070ff;
+}
+.wd-bg-color-red {
+  background-color: #ff7070;
+}
+
+.wd-margin-right-left {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.wd-margin-all-around {
+  margin: 30px;
+}
+
+.colored-square {
+  width: 250px;
+  height: 175px;
+  background-color: #3498db;
+}
+
+.wd-account-nav-cell {
+  padding-left: 9px;
+  color: red;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.wd-account-nav-cell-active {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-left: solid;
+  padding-left: 9px;
+}
+
+.wd-fg-color-red {
+  color: #ff7070;
+}
+
+.wd-float-right {
+  float: right;
+  height: 100px;
+}
+.wd-fg-color-green {
+  color: green;
+}
+
+a:link,
+a:visited {
+  color: red;
+  text-decoration: none;
+}
