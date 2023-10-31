@@ -1,3 +1,4 @@
+import React from "react";
 const Ternary = () => {
   let loggedIn = true;
   return (

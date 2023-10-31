@@ -1,3 +1,4 @@
+import React from "react";
 function House() {
   const house = {
     bedrooms: 4,

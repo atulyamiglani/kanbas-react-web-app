@@ -1,4 +1,5 @@
 import ES5Functions from "./ES5Functions";
+import React from "react";
 import ArrowFunctions from "./ArrowFunctions";
 import ImpliedReturn from "./ImpliedReturn";
 import FunctionParenthesisAndParameters from "./FunctionParenthesisAndParameters";

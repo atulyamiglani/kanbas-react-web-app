@@ -1,3 +1,4 @@
+import React from "react";
 const FunctionParenthesisAndParameters = () => {
   const square = (a) => a * a;
   const plusOne = (a) => a + 1;

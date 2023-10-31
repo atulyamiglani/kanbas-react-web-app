@@ -3,6 +3,7 @@ import FilterFunction from "./FilterFunction";
 import FindFunction from "./FindFunction";
 import ForLoops from "./ForLoops";
 import MapFunction from "./MapFunction";
+import React from "react";
 
 const WorkingWithArrays = () => {
   var functionScoped = 2;

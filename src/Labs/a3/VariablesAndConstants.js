@@ -1,3 +1,4 @@
+import React from "react";
 function VariablesAndConstants() {
   var functionScoped = 2;
   let blockScoped = 5;

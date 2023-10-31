@@ -1,3 +1,4 @@
+import React from "react";
 const FilterFunction = () => {
   let numberArray1 = [1, 2, 4, 5, 6];
 

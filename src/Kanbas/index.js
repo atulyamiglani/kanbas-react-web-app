@@ -4,6 +4,7 @@ import Dashboard from "./Dashboard";
 import Courses from "./Courses/index.js";
 import Home from "./Courses/Home/index.js";
 import Assignments from "./Courses/Assignments/index.js";
+import React from "react";
 
 function Kanbas() {
   return (

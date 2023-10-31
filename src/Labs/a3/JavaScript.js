@@ -1,3 +1,4 @@
+import React from "react";
 import VariableTypes from "./VariableTypes";
 import VariablesAndConstants from "./VariablesAndConstants";
 import BooleanVariables from "./BooleanVariables";

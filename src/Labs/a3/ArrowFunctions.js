@@ -1,3 +1,4 @@
+import React from "react";
 const ArrowFunctions = () => {
   const subtract = (a, b) => {
     return a - b;

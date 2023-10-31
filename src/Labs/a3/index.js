@@ -1,4 +1,5 @@
 import JavaScript from "./JavaScript";
+import React from "react";
 import PathParameters from "./PathParameters";
 import Classes from "./Classes";
 import Styles from "./Styles";
