@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import db from "../../Database";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCheckCircle,
@@ -14,28 +13,46 @@ import {
   deleteModule,
   updateModule,
   setModule,
+  setModules,
 } from "./modulesReducer";
+import { createModule } from "./client";
+import { findModulesForCourse } from "./client";
+import * as client from "./client";
 
 function ModuleList() {
   const { courseId } = useParams();
-  // const [module, setModule] = useState({
-  //   name: "New Module",
-  //   description: "New Description",
-  //   course: courseId,
-  // });
+  useEffect(() => {
+    findModulesForCourse(courseId).then((modules) =>
+      dispatch(setModules(modules))
+    );
+  }, [courseId]);
+
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
+  const handleAddModule = () => {
+    createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
+
+  const handleDeleteModule = (moduleId) => {
+    client.deleteModule(moduleId).then((status) => {
+      dispatch(deleteModule(moduleId));
+    });
+  };
+
+  const handleUpdateModule = async () => {
+    const status = await client.updateModule(module);
+    dispatch(updateModule(module));
+  };
+
   const dispatch = useDispatch();
 
   return (
     <ul className="list-group">
       <li className="list-group-item">
-        <button
-          onClick={() => dispatch(addModule({ ...module, course: courseId }))}
-        >
-          Add
-        </button>
-        <button onClick={() => dispatch(updateModule(module))}>Update</button>
+        <button onClick={handleAddModule}>Add</button>
+        <button onClick={() => handleUpdateModule()}>Update</button>
 
         <input
           value={module.name}
@@ -105,7 +122,7 @@ function ModuleList() {
           >
             <button onClick={() => dispatch(setModule(module))}> Edit</button>
 
-            <button onClick={() => dispatch(deleteModule(module._id))}>
+            <button onClick={() => handleDeleteModule(module._id)}>
               Delete
             </button>
             <FontAwesomeIcon icon={faEllipsisV} />
