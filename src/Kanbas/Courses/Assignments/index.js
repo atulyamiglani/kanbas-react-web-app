@@ -14,49 +14,49 @@ function Assignments() {
     <div>
       <h2>Assignments for course {courseId}</h2>
       <div className="list-group">
-        <ul class="list-group">
-          <div class="container p-2">
+        <ul className="list-group">
+          <div className="container p-2">
             <input
               style={{ height: "37px" }}
               placeholder="Search for Assignment"
             />
-            <div class="float-end">
+            <div className="float-end">
               <button
-                class="btn btn-secondary"
+                className="btn btn-secondary"
                 type="button"
                 id="dropdownMenuButton1"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <i class="fa fa-plus" aria-hidden="true"></i>
+                <i className="fa fa-plus" aria-hidden="true"></i>
                 Group
               </button>
               <button
-                class="btn btn-danger"
+                className="btn btn-danger"
                 type="button"
                 id="dropdownMenuButton1"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <i class="fa fa-plus" aria-hidden="true"></i>
+                <i className="fa fa-plus" aria-hidden="true"></i>
                 Module
               </button>
-              <button type="button" class="btn btn-secondary col">
-                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+              <button type="button" className="btn btn-secondary col">
+                <i className="fa fa-ellipsis-v" aria-hidden="true"></i>
               </button>
             </div>
           </div>
           <hr />
           <li
-            class="list-group-item list-group-item-secondary"
+            className="list-group-item list-group-item-secondary"
             style={{ marginRight: "20px" }}
           >
-            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-            <span class="p-2">
+            <i className="fa fa-ellipsis-v" aria-hidden="true"></i>
+            <i className="fa fa-ellipsis-v" aria-hidden="true"></i>
+            <span className="p-2">
               Assignments
-              <div class="float-end">
-                <span class="border border-dark rounded-pill">
+              <div className="float-end">
+                <span className="border border-dark rounded-pill">
                   40% of Total
                 </span>
                 <FontAwesomeIcon icon={faPlus} />
@@ -66,15 +66,15 @@ function Assignments() {
           </li>
           {courseAssignments.map((assignment) => (
             <li
-              class="list-group-item"
+              className="list-group-item"
               style={{ "border-left": "5px solid green", color: "black" }}
             >
               <Link
                 key={assignment._id}
                 to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
               >
-                <div class="row">
-                  <div class="col-2">
+                <div className="row">
+                  <div className="col-2">
                     <FontAwesomeIcon icon={faEllipsisV} color="black" />
                     <FontAwesomeIcon icon={faEllipsisV} color="black" />
                     <FontAwesomeIcon
@@ -90,13 +90,13 @@ function Assignments() {
                       {assignment.course} | Due SEPTEMBER 17, 2023 | Points 100
                     </small>
                   </div>
-                  <div class="col-2">
-                    <div class="float-end">
+                  <div className="col-2">
+                    <div className="float-end">
                       <i
-                        class="fa fa-check-circle wd-fg-color-green p-1"
+                        className="fa fa-check-circle wd-fg-color-green p-1"
                         aria-hidden="true"
                       ></i>
-                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                      <i className="fa fa-ellipsis-v" aria-hidden="true"></i>
                     </div>
                   </div>
                 </div>

@@ -1,9 +1,10 @@
 import axios from "axios";
 
-const API_BASE = process.env.REACT_APP_API_BASE;
+const API_BASE = process.env.REACT_APP_API_BASE || "http://localhost:4000/api";
 const COURSES_URL = `${API_BASE}/courses`;
 const MODULES_URL = `${API_BASE}/modules`;
 export const findModulesForCourse = async (courseId) => {
+  console.log(COURSES_URL);
   const response = await axios.get(`${COURSES_URL}/${courseId}/modules`);
   return response.data;
 };
